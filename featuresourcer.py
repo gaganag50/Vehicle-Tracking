@@ -27,7 +27,7 @@ class FeatureSourcer:
                             pixels_per_cell = self.ppc,
                             cells_per_block = self.cpb, 
                             transform_sqrt = self.do_sqrt, 
-                            visualise = True, 
+                            visualize = True, 
                             feature_vector = False)
     return features, hog_img
 
