@@ -2,11 +2,7 @@
 
 Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), and support vector machines (SVM). Optimized and evaluated the model on video data from a automotive camera taken during highway driving.
 
-------
-[MEDIUM: VEHICLE TRACKING ](https://medium.com/@mithi/vehicles-tracking-with-hog-and-linear-svm-c9f27eaf521a)
-------
-
-**Version 2 uses the following parameters for feature extraction**
+**The following parameters are used for feature extraction**
 
 ```
 feature_params = {
@@ -18,20 +14,6 @@ feature_params = {
   'do_transform_sqrt': True
 }
 # [3 x 3 block positions] x [2 x 2 cells per block] x [11 orientations] x [3 channels] = 1,188 features
-```
-
-**Version 1 uses the following parameters for feature extraction**
-```
-feature_params = {
-  'color_model': 'hls',                # hls, hsv, yuv, ycrcb
-  'bounding_box_size': 64,             # 64 pixels x 64 pixel image
-  'number_of_orientations': 12,        # 6 - 12
-  'pixels_per_cell': 8,                # 8, 16
-  'cells_per_block': 2,                # 1, 2
-  'do_transform_sqrt': True
-}
-
-# [7 x 7 block positions] x [2 x 2 cells per block] x [12 orientations] x [3 channels] = 7,056 features
 ```
 
 
@@ -53,7 +35,7 @@ This is so that each notebook sees relevant files, the most relevant files being
 - slider.py
 - heatmap.py
 
-## [VERSION 1](./A-VEHICLE-TRACKING/)
+
 
 # [Data from From Kitti Benchmark](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d)
 - [Non-Vehicle Data](https://www.dropbox.com/s/3kcbbvau7mnqzwe/non-vehicles.zip?dl=0)
